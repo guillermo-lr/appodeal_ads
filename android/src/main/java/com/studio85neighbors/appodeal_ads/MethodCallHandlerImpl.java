@@ -97,6 +97,9 @@ final class MethodCallHandlerImpl implements MethodCallHandler, RewardedVideoCal
     } else if (call.method.equals("showRewardedVideo")) {
       Appodeal.show(activity, Appodeal.REWARDED_VIDEO);
       result.success(Boolean.TRUE);
+    }else if (call.method.equals("showBanner")) {
+      Appodeal.show(activity,  Appodeal.BANNER_BOTTOM);
+      result.success(Boolean.TRUE);
     } else if (call.method.equals("isLoaded")) {
       int type = call.argument("type");
       int adType = this.appodealAdType(type);

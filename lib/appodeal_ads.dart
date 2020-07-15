@@ -75,6 +75,11 @@ class Appodeal {
     _channel.invokeMethod('showInterstitial');
   }
 
+  Future showBanner() async {
+    shouldCallListener = false;
+    _channel.invokeMethod('showBanner');
+  }
+
   /*
     Shows an Rewarded Video in the root view controller or main activity
    */
