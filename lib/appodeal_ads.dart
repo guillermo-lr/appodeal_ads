@@ -78,8 +78,34 @@ class Appodeal {
   Future showBanner() async {
     shouldCallListener = false;
     _channel.invokeMethod('showBanner');
+
+
+
+
+
+
   }
 
+    Future hideBanner() async {
+    shouldCallListener = false;
+    _channel.invokeMethod('hideBanner');
+
+
+
+
+
+    
+  }
+  Future destroyBanner() async {
+    shouldCallListener = false;
+    _channel.invokeMethod('destroyBanner');
+
+
+
+
+
+    
+  }
   /*
     Shows an Rewarded Video in the root view controller or main activity
    */
